@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 05.06.2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button id="btn1">Click me!</button>
+
+    <p id="myText">Hello world</p>
+
+    <input type="text" id="inputField" placeholder="Type something...">
+    <button id="btn2">Display</button>
+    <div id="div1"></div>
+
+    <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <button id="btn3">Toggle Visibility</button>
+
+    <div id="div2" style="height: 100px;width: 100px; background-color: blue;"></div>
+
+    <div id="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button onclick="append('/')">÷</button>
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button onclick="append('*')">×</button>
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button onclick="append('-')">−</button>
+            <button onclick="append('0')">0</button>
+            <button onclick="append('.')">.</button>
+            <button id="clear" onclick="clearDisplay()">C</button>
+            <button onclick="append('+')">+</button>
+            <button class="equal" onclick="calculate()" style="grid-column: span 4;">=</button>
+        </div>
+    </div>
+
+    <div id="countContainer">    
+        <div id = "countDisplay">0</div>
+        <button id="countbtn">Click To add Count</button>
+    </div>
+
+    <div id="passwordContainer">
+        <input type="password" id="passwordField" placeholder="Enter password">
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword">Show Password</label>
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>

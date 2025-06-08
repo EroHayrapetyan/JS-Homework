@@ -1,0 +1,63 @@
+#calculator {
+      background: black;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      width: 240px;
+      margin-top: 50px;
+    }
+.display {
+    height: 40px;
+    background: #eee;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    }
+.buttons button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background: #02d6f6;
+    cursor: pointer;
+}
+.buttons button:hover {
+    background: #00adf7;
+}
+.buttons .equal {
+    background: greenyellow;
+    color: white;
+}
+#clear {
+    background-color: rgb(255, 0, 0);
+}
+
+#countDisplay {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+    width: 200px;
+    height: 100px;
+}
+#countbtn{
+    background-color: #02d6f6;
+    padding: 10px 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;        
+}
+#passwordField{
+    margin-top: 20px;
+    display: block;
+    
+}
